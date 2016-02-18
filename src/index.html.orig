@@ -1,0 +1,35 @@
+<!DOCTYPE html >
+<html>
+  <head>
+    <meta charset="utf-8" >
+    <title>hello world demo</title>
+
+   <!--Application styles -->
+    <style>
+      *{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      div#renderercontainer{
+        background-color: #353535;
+        height: calc(100vh - 300px);
+        width: 100%;
+        margin: 0;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    HELLO FROM FSURF!
+
+
+    <div id="renderercontainer"></div>
+
+    <script data-main="js/main" src="../bower_components/requirejs/require.js">    
+    </script>
+
+
+  </body>
+</html>

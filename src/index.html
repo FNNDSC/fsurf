@@ -1,0 +1,37 @@
+<!DOCTYPE html >
+<html>
+  <head>
+    <meta charset="utf-8" >
+    <title>renderjs demo</title>
+    <!--Include jquery ui styles -->
+    <link rel="stylesheet"  href="../bower_components/jquery-ui/themes/base/jquery-ui.min.css">
+    <!--Include renderer box styles -->
+    <link rel="stylesheet"  href="../bower_components/rendererjs/src/styles/rendererjs.css">
+
+    <!--Application styles -->
+    <style>
+      *{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      div#renderercontainer{
+        background-color: #353535;
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <div id="renderercontainer"></div>
+
+    <!-- Load scripts -->
+    <script data-main="js/main" src="../bower_components/requirejs/require.js">
+    </script>
+
+  </body>
+</html>
