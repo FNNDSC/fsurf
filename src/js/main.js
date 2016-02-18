@@ -37,10 +37,10 @@ require([
 
    // Image file object
     var imgFileObj = {
-      baseUrl: 'volumes/nii/',
+      baseUrl: 'I am base URL',
       imgType: 'vol',
-      files: [{url: 'mri_testdata/volumes/nii/s34654_df.nii', name: 's34654_df.nii', remote: true}],
-      json: {'url': 'mri_testdata/json/s34654_df.json', name: 's34654_df.json', 'remote': true}
+      files: [{url: '/bower_components/mri_testdata/volumes/nii/s34654_df.nii', name: 's34654_df.nii', remote: true}],
+      json: {'url': '/bower_components/mri_testdata/json/s34654_df.json', name: 's34654_df.json', 'remote': true}
     };
 
     // renderer options object
@@ -50,7 +50,7 @@ require([
       orientation: 'Z'
     };
 
-    var  r = new rendererjs.Renderer(options);
+    var  r = new renderer.Renderer(options);
         
     r.init(imgFileObj, function() {
           console.log('rendered!');
