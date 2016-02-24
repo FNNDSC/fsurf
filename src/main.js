@@ -19,6 +19,7 @@ require(['fsurf'], function(fsurf) {
 
   fsurf.init();
   fsurf.printBowerDependencies();
+  fsurf.printLocalDependencies();
 
   // Image file object
   var baseUrl = '../bower_components/'

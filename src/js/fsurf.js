@@ -19,9 +19,15 @@ define(
 
     fsurf.printBowerDependencies = function() {
 
+      window.console.log('Bower dependencies:');
       window.console.log('rendererjs', renderer);
       window.console.log('viewerjs', viewer);
       window.console.log('thbarjs', thbar);
+    };
+
+    fsurf.printLocalDependencies = function() {
+
+      window.console.log('Local dependencies:');
       window.console.log('XTK', X);
     };
 
